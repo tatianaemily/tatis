@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff200;
+    color: #111111;
+
+    font-family: Arial, sans-serif;
+
+    margin: 0;
+    padding: 30px 20px;
+
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+
+
+a {
+    color: #111111;
+    text-decoration: none;
+
+    border: 1px solid #111111;
+    border-radius: 30px;
+    transition: all 0.2s ease;
+
+    width: 280px;
+    max-width: 100%;
+
+    padding: 14px;
+    margin: 7px;
+
+    text-align: center;
+}
+
+a:hover {
+    background-color: #FE78FF;
+    color: #47F5F2;
+
+    transform: scale(1.05);
+}
+
+.lotus {
+    width: 120px;
+    height: auto;
+    margin: 5px 0 15px 0;
+
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+/* TABLETS */
+@media (max-width: 900px) {
+
+    body {
+        padding: 30px 20px;
+        box-sizing: border-box;
+    }
+
+    a {
+        max-width: 80%;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+
+/* PHONES */
+@media (max-width: 600px) {
+
+    body {
+        padding: 25px 18px;
+    }
+
+    a {
+        width: 85%;
+        max-width: 280px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+}
